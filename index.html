@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///Users/nicolequek/Downloads/sec3_g3_peel_government_worksheet.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sec 3 G3 PEEL Worksheet - Role of Government</title>
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe3ef;
+      --primary: #2457a6;
+      --primary-soft: #eaf2ff;
+      --good: #157347;
+      --good-soft: #e9f7ef;
+      --warn: #9a6700;
+      --warn-soft: #fff8db;
+      --bad: #b42318;
+      --bad-soft: #fff0ef;
+      --lav: #f3ecff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+    }
+    .hero {
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 { margin: 0 0 10px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    p { margin: 8px 0; }
+    .muted { color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip {
+      background: var(--primary-soft);
+      color: var(--primary);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      border: 1px solid #cfe0ff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card { padding: 20px; }
+    label {
+      display: block;
+      font-weight: 700;
+      margin: 14px 0 6px;
+    }
+    textarea, select, input[type="text"] {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #cfd8e3;
+      font: inherit;
+      background: #fff;
+    }
+    textarea { min-height: 94px; resize: vertical; }
+    .small { font-size: 13px; }
+    .question-box {
+      background: #fafcff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; }
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .primary { background: var(--primary); color: white; }
+    .secondary { background: #eef2f7; color: var(--ink); }
+    .success { background: var(--good); color: white; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .panel {
+      border-radius: 14px;
+      padding: 14px;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      background: #fbfcfe;
+    }
+    .score {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .feedback-item {
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      border: 1px solid transparent;
+    }
+    .good { background: var(--good-soft); border-color: #b7e3c7; }
+    .warn { background: var(--warn-soft); border-color: #eed98a; }
+    .bad { background: var(--bad-soft); border-color: #f0b4ae; }
+    .step {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .step:first-child { border-top: 0; }
+    .num {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--lav); display: grid; place-items: center; font-weight: 800;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #fff;
+      margin-top: 10px;
+    }
+    summary { cursor: pointer; font-weight: 700; }
+    .sentence-starters button {
+      background: #f3f6fb; color: #24415f; font-weight: 600; border: 1px solid #d7e0ec;
+      padding: 8px 10px; border-radius: 10px;
+    }
+    .sentence-starters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .meter { height: 12px; background: #e8edf5; border-radius: 999px; overflow: hidden; margin: 10px 0 6px; }
+    .fill { height: 100%; width: 0%; background: linear-gradient(90deg, #7aa7ff, #2457a6); }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; margin-left: 6px;
+      background: #eef2ff; color: #3a4eb8;
+    }
+    .footer-note { margin-top: 18px; font-size: 13px; color: var(--muted); }
+    @media (max-width: 880px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>PEEL Worksheet: Role of Government</h1>
+      <p><strong>Sec 3 G3 Social Studies</strong></p>
+      <p class="muted">Build one strong paragraph at a time. Focus on one main factor, explain it clearly, use a specific Singapore example, then link it back to the question.</p>
+      <div class="chips">
+        <span class="chip">P = one clear main factor</span>
+        <span class="chip">E = explain the idea clearly</span>
+        <span class="chip">E = use a specific Singapore example</span>
+        <span class="chip">L = show how it answers the question</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>1. Choose a question</h2>
+        <select id="questionSelect">
+          <option value="law">Explain how the government maintains law and order in working for the good of society.</option>
+          <option value="wellbeing">Explain how the government ensures the economic and social well-being of citizens in working for the good of society.</option>
+          <option value="national">Explain how the government promotes and protects national interests in working for the good of society.</option>
+        </select>
+
+        <div class="question-box" id="questionInfo"><strong>Maintains law and order</strong><p class="muted">Focus on how the government keeps people safe, ensures people obey laws, and creates a peaceful and orderly society.</p></div>
+
+        <div class="panel">
+          <h3>2. Think before you write</h3>
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Notice</strong>
+              <div class="muted">What is the question asking the government to do?</div>
+              <input type="text" id="notice" placeholder="Example: keep people safe and society orderly">
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>Think</strong>
+              <div class="muted">What is one strong Singapore example I can use?</div>
+              <input type="text" id="think" placeholder="Example: Singapore Police Force, HDB housing, ASEAN, SAF">
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>Check</strong>
+              <div class="muted">Am I explaining or only naming?</div>
+              <select id="checkSelect">
+                <option>I am not sure yet</option>
+                <option>I am mostly naming</option>
+                <option>I am explaining how and why</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <label for="point">P — Point</label>
+        <textarea id="point" placeholder="Write one clear opening statement that directly answers the question."></textarea>
+        <div class="small muted">Tip: Start with “One way the government works for the good of society is by...”</div>
+        <div class="sentence-starters" data-target="point">
+          <button type="button">One way the government works for the good of society is by</button>
+          <button type="button">The government plays an important role by</button>
+        </div>
+
+        <label for="explain">E — Explain</label>
+        <textarea id="explain" placeholder="Describe the factor. Explain the term or concept clearly. Show what it means and how it works."></textarea>
+        <div class="small muted">Tip: Do not stop at naming the factor. Explain what the government does and why it matters.</div>
+        <div class="sentence-starters" data-target="explain">
+          <button type="button">This means that the government</button>
+          <button type="button">This is important because</button>
+          <button type="button">In other words,</button>
+        </div>
+
+        <label for="example">E — Example</label>
+        <textarea id="example" placeholder="Use one specific local example from Singapore."></textarea>
+        <div class="small muted">Tip: Be specific. Name an agency, policy, programme, agreement, or real example in Singapore.</div>
+        <div class="sentence-starters" data-target="example">
+          <button type="button">For example, in Singapore,</button>
+          <button type="button">A clear local example is</button>
+        </div>
+
+        <label for="link">L — Link</label>
+        <textarea id="link" placeholder="Link your factor back to the question focus: how does this help the good of society?"></textarea>
+        <div class="small muted">Tip: Use your main factor again and connect it to safety, well-being, or national security.</div>
+        <div class="sentence-starters" data-target="link">
+          <button type="button">Therefore, this helps society because</button>
+          <button type="button">As a result, this allows the government to</button>
+        </div>
+
+        <div class="actions">
+          <button class="primary" id="checkBtn">Check my PEEL</button>
+          <button class="secondary" id="showModelBtn">Show model answer</button>
+          <button class="secondary" id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2>Success criteria</h2>
+        <div class="panel">
+          <strong>P</strong> Identify one clear main factor and answer the question directly.<br><br>
+          <strong>Explain</strong> Describe the factor and explain the term or concept so your reader understands what it means.<br><br>
+          <strong>Example</strong> Use a specific Singapore example to show the factor clearly.<br><br>
+          <strong>Link</strong> Use the main factor again and show how it helps the government work for the good of society.
+        </div>
+
+        <div class="panel">
+          <h3>Confidence meter</h3>
+          <div class="meter"><div class="fill" id="fill" style="width: 6%;"></div></div>
+          <div id="meterText" class="small muted">Start writing to build your paragraph.</div>
+        </div>
+
+        <div class="panel" id="feedbackPanel">
+          <h3>Feedback</h3>
+          <p class="muted">Your feedback will appear here.</p>
+        </div>
+
+        <details>
+          <summary>Helpful Singapore examples</summary>
+          <div id="examplesList" class="small"><p>• Singapore Police Force (SPF) enforcing laws and keeping public order</p><p>• Internal Security Department (ISD) dealing with security threats</p><p>• Singapore Civil Defence Force (SCDF) responding to emergencies</p><p>• Clear laws and penalties that deter unlawful behaviour</p></div>
+        </details>
+
+        <details>
+          <summary>Model answer</summary>
+          <div id="modelAnswer" class="small muted">Choose a question, then click “Show model answer”.</div>
+        </details>
+
+        <details>
+          <summary>Quick self-check</summary>
+          <div class="small">
+            <p>Before you submit, ask yourself:</p>
+            <p>1. Did I state one main factor clearly?</p>
+            <p>2. Did I explain what the factor means?</p>
+            <p>3. Did I use one specific Singapore example?</p>
+            <p>4. Did I link back to the good of society?</p>
+          </div>
+        </details>
+      </aside>
+    </div>
+
+    <p class="footer-note">This worksheet is designed to keep the thinking clear and manageable: first notice the demand of the question, then build one PEEL paragraph step by step.</p>
+  </div>
+
+  <script>
+    const data = {
+      law: {
+        title: 'Maintains law and order',
+        prompt: 'Focus on how the government keeps people safe, ensures people obey laws, and creates a peaceful and orderly society.',
+        examples: [
+          'Singapore Police Force (SPF) enforcing laws and keeping public order',
+          'Internal Security Department (ISD) dealing with security threats',
+          'Singapore Civil Defence Force (SCDF) responding to emergencies',
+          'Clear laws and penalties that deter unlawful behaviour'
+        ],
+        keywords: {
+          point: ['law and order', 'maintain order', 'safety', 'security', 'justice'],
+          explain: ['safe', 'secure', 'obey', 'rules', 'peaceful', 'justice', 'fair', 'protect'],
+          example: ['singapore police force', 'spf', 'isd', 'scdf', 'police', 'law', 'penalty'],
+          link: ['good of society', 'order', 'safety', 'security', 'peaceful', 'deter']
+        },
+        model: `One way the government works for the good of society is by maintaining law and order. This means the government makes sure people obey laws, behave in an organised and peaceful way, and are protected from harm. It also ensures justice through fair rules and equal treatment. For example, in Singapore, the Singapore Police Force helps to enforce laws and maintain public safety, while agencies such as the SCDF respond during emergencies. Therefore, by maintaining law and order, the government keeps society safe and stable, which allows people to live peacefully.`
+      },
+      wellbeing: {
+        title: 'Ensures economic and social well-being',
+        prompt: 'Focus on how the government meets people’s basic needs and helps citizens enjoy a better quality of life.',
+        examples: [
+          'HDB housing to provide affordable homes',
+          'Public healthcare and subsidies',
+          'Education provided through schools',
+          'CPF scheme for retirement and healthcare needs',
+          'SkillsFuture to help Singaporeans upgrade skills'
+        ],
+        keywords: {
+          point: ['economic', 'social well-being', 'well-being', 'quality of life', 'basic needs'],
+          explain: ['quality of life', 'basic needs', 'food', 'water', 'shelter', 'opportunities', 'support', 'standard of living'],
+          example: ['hdb', 'cpf', 'skillsfuture', 'school', 'education', 'healthcare', 'public transport'],
+          link: ['good of society', 'quality of life', 'basic needs', 'trust', 'progress', 'well-being']
+        },
+        model: `One way the government works for the good of society is by ensuring the economic and social well-being of citizens. This means the government helps citizens meet their basic needs such as housing, healthcare and education, while also giving them opportunities to improve their lives. For example, in Singapore, HDB housing allows many citizens to have access to affordable homes, while the CPF scheme supports retirement and healthcare needs. Therefore, by ensuring economic and social well-being, the government improves citizens’ quality of life and helps society remain stable and progressive.`
+      },
+      national: {
+        title: 'Promotes and protects national interests',
+        prompt: 'Focus on how the government protects Singapore’s security and well-being through diplomacy and deterrence.',
+        examples: [
+          'SAF building defence capabilities on land, at sea and in the air',
+          'Singapore working with ASEAN',
+          'RCEP and other trade cooperation',
+          'Bilateral ties such as the Malaysia-Singapore water agreement',
+          'Military exercises and national defence measures'
+        ],
+        keywords: {
+          point: ['national interests', 'protect national interests', 'security', 'diplomacy', 'deterrence'],
+          explain: ['security', 'well-being', 'cooperation', 'friendship', 'prevent', 'aggressors', 'protect'],
+          example: ['asean', 'rcep', 'saf', 'mindef', 'malaysia', 'water agreement', 'military'],
+          link: ['good of society', 'security', 'well-being', 'stable', 'minimal interruptions', 'protect']
+        },
+        model: `One way the government works for the good of society is by promoting and protecting national interests. This means the government keeps Singapore safe and protects its well-being through diplomacy with other countries and deterrence against threats. For example, Singapore works with other countries through ASEAN and also builds its defence capabilities through the SAF to discourage possible attacks. Therefore, by promoting and protecting national interests, the government helps Singapore remain secure and stable, which allows society to continue progressing.`
+      }
+    };
+
+    const ids = ['point', 'explain', 'example', 'link'];
+    const questionSelect = document.getElementById('questionSelect');
+    const questionInfo = document.getElementById('questionInfo');
+    const examplesList = document.getElementById('examplesList');
+    const modelAnswer = document.getElementById('modelAnswer');
+    const feedbackPanel = document.getElementById('feedbackPanel');
+    const fill = document.getElementById('fill');
+    const meterText = document.getElementById('meterText');
+
+    function updateQuestion() {
+      const q = data[questionSelect.value];
+      questionInfo.innerHTML = `<strong>${q.title}</strong><p class="muted">${q.prompt}</p>`;
+      examplesList.innerHTML = q.examples.map(e => `<p>• ${e}</p>`).join('');
+      modelAnswer.innerHTML = 'Choose a question, then click “Show model answer”.';
+      runMeter();
+    }
+
+    function normalise(text) {
+      return text.toLowerCase().replace(/[^a-z0-9\s-]/g, ' ');
+    }
+
+    function hasAny(text, keywords) {
+      const t = normalise(text);
+      return keywords.some(k => t.includes(k));
+    }
+
+    function wordCount(text) {
+      return text.trim() ? text.trim().split(/\s+/).length : 0;
+    }
+
+    function evaluateSection(text, type, q) {
+      const count = wordCount(text);
+      if (count === 0) {
+        return { level: 'bad', msg: `This part is still empty. Write a short ${type} first.` , score: 0 };
+      }
+      if (count < 6) {
+        return { level: 'warn', msg: `Good start, but this ${type} is too short. Add a little more detail.` , score: 1 };
+      }
+      const hasKeyword = hasAny(text, q.keywords[type]);
+      if (!hasKeyword) {
+        return { level: 'warn', msg: `You are writing something relevant, but the ${type} is not focused enough on the main factor.` , score: 1 };
+      }
+      if (count < 14) {
+        return { level: 'good', msg: `This ${type} is clear. You can improve it by being a little more specific.` , score: 2 };
+      }
+      return { level: 'good', msg: `Strong ${type}. It is focused and developed.` , score: 3 };
+    }
+
+    function feedbackHTML(title, result) {
+      return `<div class="feedback-item ${result.level}"><strong>${title}</strong><br>${result.msg}</div>`;
+    }
+
+    function runMeter() {
+      const totalWords = ids.map(id => wordCount(document.getElementById(id).value)).reduce((a,b) => a+b, 0);
+      const percent = Math.max(6, Math.min(100, Math.round(totalWords / 1.8)));
+      fill.style.width = percent + '%';
+      if (totalWords === 0) meterText.textContent = 'Start writing to build your paragraph.';
+      else if (totalWords < 25) meterText.textContent = 'You have started. Keep going step by step.';
+      else if (totalWords < 55) meterText.textContent = 'You are building a clear PEEL paragraph.';
+      else meterText.textContent = 'Your paragraph is developing well. Now check accuracy and specificity.';
+    }
+
+    document.getElementById('checkBtn').addEventListener('click', () => {
+      const q = data[questionSelect.value];
+      const point = evaluateSection(document.getElementById('point').value, 'point', q);
+      const explain = evaluateSection(document.getElementById('explain').value, 'explain', q);
+      const example = evaluateSection(document.getElementById('example').value, 'example', q);
+      const link = evaluateSection(document.getElementById('link').value, 'link', q);
+      const score = point.score + explain.score + example.score + link.score;
+
+      let overall = '';
+      if (score <= 4) overall = 'You have the beginnings of an answer. Focus first on one clear factor and one specific Singapore example.';
+      else if (score <= 8) overall = 'You are on the right track. Your next step is to make your explanation clearer and your link tighter.';
+      else overall = 'This is a confident PEEL paragraph. Keep your example specific and your link direct.';
+
+      const gap = [];
+      if (point.score < 2) gap.push('Make your opening statement answer the question more directly.');
+      if (explain.score < 2) gap.push('Explain what the factor means, not just name it.');
+      if (example.score < 2) gap.push('Use one real Singapore example such as an agency, policy, or programme.');
+      if (link.score < 2) gap.push('Link back to how this helps the good of society.');
+
+      feedbackPanel.innerHTML = `
+        <h3>Feedback</h3>
+        <div class="score">${score}/12 <span class="pill">Progress check</span></div>
+        <p>${overall}</p>
+        ${feedbackHTML('P — Point', point)}
+        ${feedbackHTML('E — Explain', explain)}
+        ${feedbackHTML('E — Example', example)}
+        ${feedbackHTML('L — Link', link)}
+        <div class="panel"><strong>Your next step</strong><br>${gap.length ? gap[0] : 'Tighten wording and keep your example precise.'}</div>
+      `;
+      runMeter();
+    });
+
+    document.getElementById('showModelBtn').addEventListener('click', () => {
+      modelAnswer.textContent = data[questionSelect.value].model;
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      ['notice','think','point','explain','example','link'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('checkSelect').selectedIndex = 0;
+      feedbackPanel.innerHTML = '<h3>Feedback</h3><p class="muted">Your feedback will appear here.</p>';
+      modelAnswer.innerHTML = 'Choose a question, then click “Show model answer”.';
+      runMeter();
+    });
+
+    document.querySelectorAll('textarea, input[type="text"]').forEach(el => el.addEventListener('input', runMeter));
+    questionSelect.addEventListener('change', updateQuestion);
+
+    document.querySelectorAll('.sentence-starters').forEach(box => {
+      box.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'BUTTON') return;
+        const target = document.getElementById(box.dataset.target);
+        const text = e.target.textContent.trim();
+        target.value = target.value ? target.value + ' ' + text + ' ' : text + ' ';
+        target.focus();
+        runMeter();
+      });
+    });
+
+    updateQuestion();
+  </script>
+
+
+</body></html>
